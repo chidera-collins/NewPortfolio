@@ -9,7 +9,7 @@ import FooterComponent from './FooterComponent/FooterComponent'
 
 function Portfolio() {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
         <HeaderComponent/>
         <Portfoliocomponent/>
         <AboutComponent/>
