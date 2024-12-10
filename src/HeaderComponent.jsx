@@ -30,7 +30,7 @@ function HeaderComponent() {
 
 
         {/* FOR SMALL AND MEDIUM SCREEN  */}
-       <div className='min-h-[20px] w-full  flex justify-between p-[10px] items-center box-border text-white relative lg:hidden'>
+       <div className='min-h-[20px] w-full  flex justify-between  items-center box-border text-white relative lg:hidden'>
             <div className='text-[1.2rem] font-bold font-custom p-[5px] '>
                 <h1>DERA CODES</h1>
             </div>
