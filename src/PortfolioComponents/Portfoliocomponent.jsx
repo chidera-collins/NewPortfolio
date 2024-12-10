@@ -6,7 +6,7 @@ import {motion} from "motion/react"
 
 function Portfoliocomponent() {
   return (
-    <div id='Home' className='h-[90vh] head md:h-[60vh] w-full lg:min-h-[70vh] head flex  flex-col  md:flex-row ' >
+    <div id='Home' className='h-[90vh] head md:h-[60vh] w-full lg:min-h-[70vh] head flex  mt-3 flex-col  md:flex-row ' >
         <motion.div 
                 initial={{ x: 30 , opacity:0}}
                 animate={{ x: 0, opacity:1 }}
