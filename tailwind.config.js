@@ -14,6 +14,12 @@ export default {
       },
       fontFamily:{
         custom:[ "Yrsa", 'serif']
+      },
+      screens:{
+        'md': '768px',   // Tablets (iPad included)
+      'lg': '1024px',  // Laptops (all sizes)
+      'xl': '1440px',  // Large screens (desktops)
+      '2xl': '1920px',
       }
     },
   },
