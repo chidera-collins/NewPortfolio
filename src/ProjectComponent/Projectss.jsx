@@ -2,10 +2,12 @@ import React from 'react'
 import lawcut from './ProjectPic/lawcut.png'
 import wilcon from './ProjectPic/wilcon.png'
 import zoo from './ProjectPic/zoo.png'
+import port from '../assets/porfolio.png'
+import feedme from '../assets/feedme.jpg'
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
 import ProjectComponent from './ProjectComponent';
-
+import { FaNodeJs } from "react-icons/fa6";
 function Projectss() {
     const project = [
         {
@@ -39,6 +41,27 @@ function Projectss() {
             tech2:<> <FaReact /> React</>,
             hub:'https://github.com/chidera-collins/zoosimulator',
             view:'https://zoosimulator.vercel.app/'
+        },
+        {
+            img:port,
+            name:'my portfolio',
+            about:'my works',
+            idea:'single page',
+            tech1:<><RiTailwindCssFill /> tailwind</>,
+            tech2:<> <FaReact /> React</>,
+            hub:'https://github.com/chidera-collins/NewPortfolio',
+            view:'https://deradev.vercel.app/'
+            
+        },
+        {
+            img:feedme,
+            name:'feed me',
+            about:'food oredering system',
+            idea:'catering service',
+            tech1:<><RiTailwindCssFill /> tailwind</>,
+            tech2:<> <FaReact /> React</>,
+            tech3:<> <FaNodeJs />node js</>,
+            view:'https://feedme-inky.vercel.app/'
         }
     ]
   return (

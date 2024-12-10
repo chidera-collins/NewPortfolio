@@ -45,22 +45,34 @@ function ProjectComponent({project=[]}) {
                         
                             </div>
 
-                            <div className=" flex flex-col gap-2">
+                            <div className=" flex flex-col flex-wrap gap-2">
                                 <div>
                                     <h1 className='font-custom font-bold text-[1.4rem]'>Technologies used</h1>
                                 </div>
                                 <div className='flex gap-2'>
                                 <h1 className="flex bg-white text-mainBg font-custom font-semibold capitalize text-[1.3rem]  p-[8px] rounded-xl items-center gap-2">{item.tech1}</h1>
                                 <h1 className='flex bg-white text-mainBg font-custom capitalize text-[1.3rem] p-[8px] rounded-xl items-center'>{item.tech2}</h1>
+                                <h1
+                                    className={`${item.tech3 ? 'flex bg-white text-mainBg font-custom capitalize text-[1.3rem] p-[8px] rounded-xl items-center' : ''}`}
+                                    >
+                                    {item.tech3}
+                                    </h1>
                                 </div>             
                            </div>
-                           <div className='flex gap-2 mt-2'>
-                                <a href={item.hub} target="_blank" rel="noopener noreferrer" className="  bg-white text-mainBg  hover:text-black hover:shadow-lg font-custom text-[1.2rem] rounded-xl">
-                                <button  className='h-[40px] w-[100px] p-[10px] flex items-center gap-2  '>
-                                <VscGithubInverted /> GitHub
-                                </button>
-                                 </a>
-                                 <a href={item.view}  target="_blank" rel="noopener noreferrer" className="rounded-xl  bg-white text-mainBg  hover:text-black hover:shadow-lg font-custom text-[1.2rem]"><button  className='h-[40px] w-[100px] p-[10px] flex items-center gap-2  '>
+                           <div className='flex gap-2 mt-4'>
+                                {item.hub && (
+                                        <a 
+                                            href={item.hub} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            className="bg-black text-mainBg hover:text-white hover:shadow-lg font-custom text-[1.2rem] rounded-xl"
+                                        >
+                                            <button className="h-[40px] w-[100px] p-[10px] flex items-center gap-2">
+                                            <VscGithubInverted /> GitHub
+                                            </button>
+                                        </a>
+                                        )}
+                                 <a href={item.view}  target="_blank" rel="noopener noreferrer" className="rounded-xl  bg-black text-mainBg  hover:text-white hover:shadow-lg font-custom text-[1.2rem]"><button  className='h-[40px] w-[100px] p-[10px] flex items-center gap-2  '>
                                  <GrFormView />View
                                     </button></a>
                            </div>
