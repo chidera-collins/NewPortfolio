@@ -11,7 +11,7 @@ function Portfoliocomponent() {
                 initial={{ x: 30 , opacity:0}}
                 animate={{ x: 0, opacity:1 }}
                 transition={{delay:1.5, duration:4}}
-            className='flex  flex-col md:justify-center lg:w-[70%]  '>
+            className='flex  flex-col md:justify-center   lg:p-[20px] lg:w-[70%]  '>
             <div className='p-[10px] text-white  '>
                     <p  className='text-[2rem]  font-semibold capitalize'>
                         i'm
