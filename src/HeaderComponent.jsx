@@ -23,14 +23,14 @@ function HeaderComponent() {
   }
   return (
     <div
-      className={` sticky top-0 left-0 w-full z-50 ${
-         isScrolled ? 'bg-black' : 'bg-mainBg'
+      className={` fixed top-0 left-0 w-full z-50 ${
+         isScrolled ? 'bg-mainBg' : 'bg-black'
       } transition-all duration-300`}
     >
 
 
         {/* FOR SMALL AND MEDIUM SCREEN  */}
-       <div className='min-h-[20px] w-full p-[10px] sticky flex justify-between  items-center box-border text-white relative lg:hidden'>
+       <div className='min-h-[20px] w-full  flex justify-between  items-center box-border text-white  lg:hidden'>
             <div className='text-[1.2rem] font-bold font-custom p-[5px] '>
                 <h1>DERA CODES</h1>
             </div>
@@ -39,7 +39,7 @@ function HeaderComponent() {
                 Ξ
               </button>
             </div>
-            <div className='absolute h-[43vh] w-full bg-black text-white leading-[75px] justify-center grid text-[1.2rem] font-custom font-bold' style={{top:subnav,transition:'top 1s ease-in-out'}}>
+            <div className='absolute h-[43vh] w-full z-40 bg-black text-white leading-[75px] justify-center grid text-[1.2rem] font-custom font-bold' style={{top:subnav,transition:'top 1s ease-in-out'}}>
                 <ul>
                     <li className='' onClick={subnavDisplay}>
                         <a href="#Home">Home</a>
