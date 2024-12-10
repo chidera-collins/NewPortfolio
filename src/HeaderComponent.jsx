@@ -30,7 +30,7 @@ function HeaderComponent() {
 
 
         {/* FOR SMALL AND MEDIUM SCREEN  */}
-       <div className='min-h-[20px] w-full p-[10px] flex justify-between  items-center box-border text-white relative lg:hidden'>
+       <div className='min-h-[20px] w-full p-[10px] sticky flex justify-between  items-center box-border text-white relative lg:hidden'>
             <div className='text-[1.2rem] font-bold font-custom p-[5px] '>
                 <h1>DERA CODES</h1>
             </div>
@@ -39,7 +39,7 @@ function HeaderComponent() {
                 Ξ
               </button>
             </div>
-            <div className='absolute h-[43vh] z-10 w-full bg-black text-white leading-[75px] justify-center grid text-[1.2rem] font-custom font-bold' style={{top:subnav,transition:'top 1s ease-in-out'}}>
+            <div className='absolute h-[43vh] w-full bg-black text-white leading-[75px] justify-center grid text-[1.2rem] font-custom font-bold' style={{top:subnav,transition:'top 1s ease-in-out'}}>
                 <ul>
                     <li className='' onClick={subnavDisplay}>
                         <a href="#Home">Home</a>
