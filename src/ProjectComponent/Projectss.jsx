@@ -53,16 +53,16 @@ function Projectss() {
             view:'https://deradev.vercel.app/'
             
         },
-        // {
-        //     img:feedme,
-        //     name:'feed me',
-        //     about:'food oredering system',
-        //     idea:'catering service',
-        //     tech1:<><RiTailwindCssFill /> tailwind</>,
-        //     tech2:<> <FaReact /> React</>,
-        //     tech3:<> <FaNodeJs />node js</>,
-        //     view:'https://feedme-inky.vercel.app/'
-        // }
+        {
+            img:feedme,
+            name:'feed me',
+            about:'food oredering system',
+            idea:'catering service',
+            tech1:<><RiTailwindCssFill /> tailwind</>,
+            tech2:<> <FaReact /> React</>,
+            tech3:<> <FaNodeJs />node js</>,
+            view:'https://feedme-inky.vercel.app/'
+        }
     ]
   return (
     <div id='Project'><ProjectComponent project={project}/></div>
