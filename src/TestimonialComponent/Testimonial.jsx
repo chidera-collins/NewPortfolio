@@ -16,7 +16,7 @@ function Testimonial() {
                     <motion.div 
                          initial={{ x: -30 , opacity:0}}
                          whileInView={{ x: 0, opacity:1 }}
-                         transition={{delay:1.5, duration:4}}
+                         transition={{delay:1.1, duration:2}}
                           viewport={{ once: true }}
                     className='bg-white text-black p-[10px] grid grid-rows-[20%,50%,15%] gap-2 rounded-lg'>
                         <div className='flex justify-between'>
@@ -64,7 +64,7 @@ function Testimonial() {
                     <motion.div
                           initial={{ x: 0 , opacity:0}}
                           whileInView={{ x: 0, opacity:1 }}
-                          transition={{delay:1.5, duration:4}}
+                          transition={{delay:1, duration:2}}
                            viewport={{ once: true }}
                      className='bg-white text-black p-[10px] gap-3 grid grid-rows-[10%,60%,15%]  rounded-lg'>
                         <div className='flex justify-between'>
@@ -110,7 +110,7 @@ function Testimonial() {
                     <motion.div 
                         initial={{ x: 30, opacity:0}}
                         whileInView={{ x: 0, opacity:1 }}
-                        transition={{delay:1.5, duration:4}}
+                        transition={{delay:1, duration:2}}
                          viewport={{ once: true }}
                     className='bg-white text-black p-[10px] gap-3 grid grid-rows-[10%,60%,15%]  rounded-lg'>
                         <div className='flex justify-between'>

@@ -11,12 +11,12 @@ function AboutComponent() {
             </div>
             <div className='flex flex-col items-center bg mt-2 min-h-[100px] '>
               <div className='w-full md:w-[95%] '>
-                <h1 className='text-[1.4rem] md:text-[1.5rem] lg:text-[2.5rem] capitalize font-custom font-bold '>two(2) years experience </h1>
+                <h1 className='text-[1.4rem] md:text-[1.5rem] lg:text-[2.5rem] capitalize font-custom font-bold '>A year experience </h1>
               </div>
               <motion.div 
                 initial={{ x: 30 , opacity:0}}
                 animate={{ x: 0, opacity:1 }}
-                transition={{delay:1.5, duration:4}}
+                transition={{delay:1, duration:2}}
               className='bg-[#402714] rounded-lg w-[95%]'>
                 <p className='leading-[34px] text-[1.1rem] lg:text-[1.3rem] text-start  p-[10px] box-border'>
                     Welcome to my portfolio ,i'm Collins, a driven front-end developer based in Lagos,Nigeria.
