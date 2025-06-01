@@ -25,9 +25,9 @@ function Portfoliocomponent() {
                 <button className='p-[5px] h-[40px] grid items-center  justify-center rounded-md bg-white text-mainBg w-[100px] hover:text-black hover:shadow-lg hover:shadow-[yellow] font-custom text-[1.2rem] '>
                     <a href="https://github.com/chidera-collins"><VscGithubInverted /></a>
                 </button>
-                <button   className='p-[5px]  rounded-md bg-white  text-mainBg w font-custom text-[1.2rem] hover:shadow-lg hover:shadow-[yellow] hover:text-black font-semibold'>
+                {/* <button   className='p-[5px]  rounded-md bg-white  text-mainBg w font-custom text-[1.2rem] hover:shadow-lg hover:shadow-[yellow] hover:text-black font-semibold'>
                     <a href="https://docs.google.com/file/d/1K9JCbKC2cZEgrnVFlZHIhLWFX4SGmUzw/edit?usp=docslist_api&filetype=msword">My Resume</a>
-                </button>
+                </button> */}
             </div>
         </motion.div>
         <div className='bg- overflow-y-hidden'>
