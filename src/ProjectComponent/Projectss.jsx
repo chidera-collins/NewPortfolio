@@ -1,9 +1,8 @@
 import React from 'react'
 import lawcut from './ProjectPic/lawcut.png'
 import wilcon from './ProjectPic/wilcon.png'
-import igm from './ProjectPic/IGM.PNG'
+import igm from './ProjectPic/igm.png'
 import zoo from './ProjectPic/zoo.png'
-import port from '../assets/porfolio.png'
 import feedme from '../assets/feedme.jpg'
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
