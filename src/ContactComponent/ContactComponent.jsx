@@ -10,9 +10,9 @@ function ContactComponent() {
         <div id='Contact' className='min-h-[100px] bg-black mt-1 text-white'>
             <div className='flex flex-col  bg min-h-[100px] font-custom w-full items-center'>
                  <div>
-                    <h1 className='text-[1.5rem] text-mainBg flex relative before:w-[30px] items-center before:mt-2 gap-[2px] before:h-[3px] before:rounded-md before:bg-mainBg lg:text-[2rem] font-bold'>Contact<span className='text-white'>ME</span> </h1>
+                    <h1 className='text-[1.5rem] text-[#c40cc476] flex relative before:w-[30px] items-center before:mt-2 gap-[2px] before:h-[3px] before:rounded-md before:bg-[#c40cc476] lg:text-[2rem] font-bold'>Contact<span className='text-white'>ME</span> </h1>
                 </div>
-                <div className='w-[95%] min-h-[100px] flex justify-center bg-[#402714] flex-col md:flex-row capitalize rounded-md  flex-wrap gap-2 p-[20px]'>
+                <div className='w-[95%] min-h-[100px] flex justify-center bg-[#8000807c] flex-col md:flex-row capitalize rounded-md  flex-wrap gap-2 p-[20px]'>
                     <div className='bg-white h-[40px] rounded-xl p-[10px] text-[1.8rem] flex items-center cursor-pointer justify-center md:w-[30%]   '>
                         <a href="mailto:chideracollins24@gmail.com" className='flex gap-2 items-center'>
                             <span className='text-[red]'><MdOutgoingMail /></span><span className='text-[red]'>Email</span>

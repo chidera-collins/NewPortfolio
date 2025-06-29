@@ -3,18 +3,18 @@ import Portfoliocomponent from './PortfolioComponents/Portfoliocomponent'
 import HeaderComponent from './HeaderComponent'
 import AboutComponent from './AboutComponent/AboutComponent'
 import Projectss from './ProjectComponent/Projectss'
-import Testimonial from './TestimonialComponent/Testimonial'
+// import Testimonial from './TestimonialComponent/Testimonial'
 import ContactComponent from './ContactComponent/ContactComponent'
 import FooterComponent from './FooterComponent/FooterComponent'
 
 function Portfolio() {
   return (
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden bg-black '>
         <HeaderComponent/>
         <Portfoliocomponent/>
         <AboutComponent/>
         <Projectss/>
-        <Testimonial/>
+        {/* <Testimonial/> */}
         <ContactComponent/>
         <FooterComponent/>
     </div>

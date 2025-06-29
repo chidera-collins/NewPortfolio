@@ -1,11 +1,13 @@
 import React from 'react'
 import lawcut from './ProjectPic/lawcut.png'
 import wilcon from './ProjectPic/wilcon.png'
+import igm from './ProjectPic/IGM.PNG'
 import zoo from './ProjectPic/zoo.png'
 import port from '../assets/porfolio.png'
 import feedme from '../assets/feedme.jpg'
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
 import ProjectComponent from './ProjectComponent';
 import { FaNodeJs } from "react-icons/fa6";
 function Projectss() {
@@ -43,14 +45,15 @@ function Projectss() {
             view:'https://zoosimulator.vercel.app/'
         },
         {
-            img:port,
-            name:'my portfolio',
-            about:'my works',
-            idea:'single page',
+            img:igm,
+            name:'Igwebuike Motors',
+            about:'Car Website',
+            idea:'E-commerce',
             tech1:<><RiTailwindCssFill /> tailwind</>,
             tech2:<> <FaReact /> React</>,
+            tech3:<><IoLogoFirebase />Firebase </>,
             hub:'https://github.com/chidera-collins/NewPortfolio',
-            view:'https://deradev.vercel.app/'
+            view:'https://igwebuike-motors.vercel.app/'
             
         },
         {

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import { VscGithubInverted } from 'react-icons/vsc';
 
 function HeaderComponent() {
     let [subnav,setSubnav] = useState('-1000px')
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [isSticky, setIsSticky] = useState(false);
 
   function subnavDisplay() {
     if (subnav==='-1000px') {
@@ -10,21 +11,22 @@ function HeaderComponent() {
     }else(
         setSubnav('-1000px')
     )
+  }
 
 
-    useEffect(() => {
+      useEffect(() => {
         const handleScroll = () => {
-          setIsScrolled(window.scrollY > 50); // Adjust the scroll threshold as needed
+         window.scrollY > 200 ? setIsSticky(true) : setIsSticky(false)
+         console.log(isSticky)
         };
     
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
       }, []);
-  }
   return (
     <div
-      className={` fixed top-0 left-0 w-full z-50 ${
-         isScrolled ? 'bg-mainBg' : 'bg-black'
+      className={` w-[95%] z-50 rounded-md translate-x-2 lg:translate-x-9 mt-3 backdrop-blur-xl ${
+         isSticky ? ' fixed bg-[#8000805a]/40 backdrop-blur-xl shadow-md'  : 'bg-[#8000805a] relative'
       } transition-all duration-300`}
     >
 
@@ -32,7 +34,7 @@ function HeaderComponent() {
         {/* FOR SMALL AND MEDIUM SCREEN  */}
        <div className='min-h-[20px] w-full  flex justify-between  items-center box-border text-white  lg:hidden'>
             <div className='text-[1.2rem] font-bold font-custom p-[5px] '>
-                <h1>DERA CODES</h1>
+                <a href='#Home'>DERA CODES</a>
             </div>
             <div className='p-[5px]'>
               <button onClick={subnavDisplay} className='font-bold text-[1.2rem]' >
@@ -45,13 +47,13 @@ function HeaderComponent() {
                         <a href="#Home">Home</a>
                     </li>
                     <li onClick={subnavDisplay}>
-                        <a href="#About">About</a>
-                    </li>
-                    <li onClick={subnavDisplay}>
                         <a href="#Project">Project</a>
                     </li>
                     <li onClick={subnavDisplay}>
                         <a href="#Contact">Contact</a>
+                    </li>
+                    <li onClick={subnavDisplay}>
+                       <a href="https://github.com/chidera-collins"><VscGithubInverted /></a>
                     </li>
                 </ul>
             </div>
@@ -61,22 +63,21 @@ function HeaderComponent() {
        {/* FOR BIG SCREEN  */}
        <div className='min-h-[50px] w-full  text-white hidden lg:flex items-center font-custom font-bold justify-between p-[10px]'>
         <div className='uppercase'>
-            <h1>dera codes</h1>
+            <a href='#Home'>dera codes</a>
         </div>
         <div className=' w-[30%]'>
             <ul className='flex  gap-3 items-center justify-around '>
                 <li>
                     <a href="#Home">Home</a>
                 </li>
-                <li>  
-                    <a href="#About">About</a>
-
-                </li>
                 <li>
                      <a href="#Project">Project</a>
                 </li>
                 <li>
                     <a href="#Contact">Contact</a>
+                </li>
+                <li>
+                       <a href="https://github.com/chidera-collins"><VscGithubInverted /></a>
                 </li>
             </ul>
         </div>
