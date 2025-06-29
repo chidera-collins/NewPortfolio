@@ -17,12 +17,6 @@ function FooterComponent() {
         </div>
     </div>
   )
-
-
-      // <a href="mailto:chideracollins24@gmail.com"> Hire me</a>
-      //           </button>
-      //           <button className='p-[5px] h-[40px] grid items-center  justify-center rounded-md bg-white text-mainBg w-[100px] hover:text-black hover:shadow-lg hover:shadow-[yellow] font-custom text-[1.2rem] '>
-      //               <a href="https://github.com/chidera-collins"><VscGithubInverted /></a>
 }
 
 export default FooterComponent
